@@ -11,7 +11,7 @@ function init() {
     let template = document.getElementById("recipe-form-template").innerHTML;
     let templateFn = Handlebars.compile(template);
     let html = templateFn(recipe);
-    document.querySelector('main').innerHTML += html;
+    document.querySelector('main').innerHTML = html;
   }
 
   showForm();
